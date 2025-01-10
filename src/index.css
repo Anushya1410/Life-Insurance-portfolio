@@ -1,0 +1,139 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+h1, h2, h3, h4, p {
+  margin: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .header nav ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .home .overlay h1 {
+    font-size: 1.8rem;
+  }
+
+  .about-image {
+    width: 52%;
+    margin-top: 1rem;
+  }
+
+  .service-list {
+    grid-template-columns: 1fr;
+  }
+
+  .testimonial-cards {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #004aad;
+  color: white;
+}
+
+.header .logo img {
+  height: 50px;
+  margin-right: 1rem;
+}
+
+.header nav ul {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+}
+
+.header nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.home {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+
+.home .overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.services {
+  padding: 2rem;
+  background-color: #f9f9f9;
+}
+
+.services .service-item {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 10px;
+  margin: 1rem 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.testimonials {
+  padding: 2rem;
+  color: white;
+  text-align: center;
+}
+
+.testimonial-card {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 1rem;
+  border-radius: 10px;
+  margin: 1rem 0;
+}
+
+.contact {
+  padding: 2rem;
+  background-color: #f4f4f4;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-form input, .contact-form textarea {
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.contact-form button {
+  padding: 0.8rem;
+  background-color: #004aad;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+}

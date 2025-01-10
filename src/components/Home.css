@@ -1,0 +1,40 @@
+.home {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    position: relative;
+  }
+  
+  .home .content {
+    padding: 20px;
+    background: none; /* No black overlay */
+  }
+  
+  .home h1 {
+    font-size: 3rem; /* Larger font for the title */
+    font-weight: 700;
+    margin-bottom: 20px;
+    color:aliceblue;
+  }
+  
+  .home p {
+    font-size: 1.5rem; /* Larger font for the text */
+    font-weight: 500;
+    margin-bottom: 40px;
+  }
+  
+  @media (max-width: 768px) {
+    .home h1 {
+      font-size: 4rem; /* Larger font on mobile for the title */
+    }
+  
+    .home p {
+      font-size: 1.8rem; /* Larger font on mobile for the text */
+    }
+  }
+  
